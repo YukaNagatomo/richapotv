@@ -347,6 +347,15 @@ header {
   background-image: url(images/richapo4.jpg);
   background-size: cover;
   background-position: center center;
+  position: relative;
+}
+
+.logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  -webkit- transform: translateY(-50%) translateX(-50%);
 }
 
 section {
