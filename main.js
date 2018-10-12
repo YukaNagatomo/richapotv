@@ -1,11 +1,3 @@
-// リサイズ
-$(window).on("resize", function () {
-  var w = $(window).width();
-  if (w < 480) {
-    window.location = window.location;
-  }
-});
-
 //ここからslick
 $(function () {
   $('.slick').slick({
