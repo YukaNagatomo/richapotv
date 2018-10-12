@@ -21,12 +21,12 @@
   font-size: 45px;
 
   position: absolute;
-  top: 50%;
+  top: 40%;
 
   display: block;
-  -webkit-transform: translate(0, -50%);
-  -ms-transform: translate(0, -50%);
-  transform: translate(0, -50%);
+  -webkit-transform: translate(0, -40%);
+  -ms-transform: translate(0, -40%);
+  transform: translate(0, -40%);
   cursor: pointer;
   color: #000;
   transition: 0.2s;
@@ -51,11 +51,11 @@
 
 @media (max-width: 480px) {
   .slick-prev {
-    left: -38px;
+    left: -30px;
   }
 
   .slick-next {
-    right: -38px;
+    right: -30px;
   }
 
   .slick-prev,
