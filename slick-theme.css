@@ -19,7 +19,6 @@
 .slick-prev,
 .slick-next {
   font-size: 45px;
-  line-height: 20px;
 
   position: absolute;
   top: 50%;
@@ -42,10 +41,28 @@
 
 .slick-prev {
   left: -60px;
+  z-index: 99;
 }
 
 .slick-next {
   right: -60px;
+  z-index: 99;
+}
+
+@media (max-width: 480px) {
+  .slick-prev {
+    left: -38px;
+  }
+
+  .slick-next {
+    right: -38px;
+  }
+
+  .slick-prev,
+  .slick-next {
+    font-size: 30px
+  }
+
 }
 
 /* Dots */

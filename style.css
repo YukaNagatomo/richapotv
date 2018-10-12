@@ -140,9 +140,54 @@ nav::before {
   transition: transform 0.5s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
-@media (min-width: 40em) {
-  nav::before {
-    width: 40em;
+nav a {
+  margin: 25px 0;
+  padding: 0 70px;
+  font-size: 40px;
+  line-height: 30px;
+  color: white;
+  text-decoration: none;
+  font-family: "english2";
+}
+
+nav a span {
+  font-size: 18px;
+}
+
+@media (min-width: 480px) {
+  nav a {
+    transform: translateX(-100%);
+    transition: color .15s, transform .5s;
+    transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+    font-family: "english2";
+  }
+
+  nav a:nth-child(1) {
+    transition-delay: 0s, 100ms;
+  }
+
+  nav a:nth-child(2) {
+    transition-delay: 0s, 150ms;
+  }
+
+  nav a:nth-child(3) {
+    transition-delay: 0s, 200ms;
+  }
+
+  nav a:nth-child(4) {
+    transition-delay: 0s, 250ms;
+  }
+
+  nav a:nth-child(5) {
+    transition-delay: 0s, 300ms;
+  }
+
+  nav a:nth-child(6) {
+    transition-delay: 0s, 350ms;
+  }
+
+  nav a:nth-child(7) {
+    transition-delay: 0s, 400ms;
   }
 }
 
@@ -153,51 +198,6 @@ nav h1 {
   color: white;
   display: block;
   font-family: "english1";
-}
-
-nav a {
-  margin: 25px 0;
-  padding: 0 70px;
-  font-size: 40px;
-  line-height: 30px;
-  color: white;
-  text-decoration: none;
-  transform: translateX(-100%);
-  transition: color .15s, transform .5s;
-  transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
-  font-family: "english2";
-}
-
-nav a span {
-  font-size: 18px;
-}
-
-nav a:nth-child(1) {
-  transition-delay: 0s, 100ms;
-}
-
-nav a:nth-child(2) {
-  transition-delay: 0s, 150ms;
-}
-
-nav a:nth-child(3) {
-  transition-delay: 0s, 200ms;
-}
-
-nav a:nth-child(4) {
-  transition-delay: 0s, 250ms;
-}
-
-nav a:nth-child(5) {
-  transition-delay: 0s, 300ms;
-}
-
-nav a:nth-child(6) {
-  transition-delay: 0s, 350ms;
-}
-
-nav a:nth-child(7) {
-  transition-delay: 0s, 400ms;
 }
 
 nav a:hover,
@@ -335,6 +335,14 @@ main .content {
   opacity: 1;
 }
 
+@media (max-width: 480px) {
+  .button{
+    font-size: 25px;
+    height: 60px;
+  line-height: 52px;
+  }
+}
+
 /*ここまでボタン*/
 
 body {
@@ -378,6 +386,22 @@ a {
   text-shadow: 5px 5px 0px #ccc;
 }
 
+@media (max-width: 480px) {
+  section {
+    padding: 40px 0;
+  }
+  
+  .logo img{
+    width: 400px;
+  }
+
+  .title {
+    font-size: 50px;
+    margin-bottom: 30px;
+    text-shadow: 3px 3px 0px #ccc;
+  }
+}
+
 #about {
   padding-top: 120px;
   text-align: center;
@@ -403,6 +427,30 @@ a {
 #about iframe {
   margin: 50px auto 100px;
   display: block;
+}
+
+@media (max-width: 480px) {
+  #about {
+    padding-top: 40px;
+  }
+
+  #about h3 {
+    font-size: 25px;
+    font-family: "koporate";
+    letter-spacing: 5px;
+  }
+
+  #about p {
+    width: 380px;
+    padding: 10px;
+    margin: 20px auto 0;
+    font-size: 14px;
+  }
+
+  #about iframe {
+    width: 90%;
+    margin: 30px auto;
+  }
 }
 
 #mamber {
@@ -447,6 +495,18 @@ a {
   line-height: 20px;
 }
 
+@media (max-width: 480px) {
+  .member-all {
+    width: 100%;
+  }
+
+  .member {
+    float: none;
+    width: 330px;
+    margin: 0 auto;
+  }
+}
+
 .slider {
   margin: 80px 0 50px;
   overflow: hidden;
@@ -485,7 +545,6 @@ a {
 }
 
 .sns a {
-  font-size: 100px;
   float: left;
   margin: 0 30px;
 }
@@ -505,7 +564,7 @@ a {
 }
 
 .sns a:hover {
-  opacity: 0.8;
+  opacity: 0.9;
 }
 
 .sns img {
@@ -514,6 +573,26 @@ a {
   height: 101px;
   vertical-align: bottom;
   margin-top: 12px;
+}
+
+@media (max-width: 480px) {
+  .sns a{
+    margin: 0 10px;
+  }
+  .sns i{
+    font-size: 50px;
+    height: 50px;
+  }
+  .sns p {
+    font-size: 14px;
+    letter-spacing: 1px
+  }
+  .sns img{
+    width: 54px;
+    height: 50px;
+    padding: 10px 0 3px;
+    margin: 0;
+  }
 }
 
 @-webkit-keyframes hvr-buzz {
